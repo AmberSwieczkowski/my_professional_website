@@ -1,23 +1,31 @@
 /** @format */
 
 .mainSection {
-  width: calc(100vw - 120px);
-  margin-left: 120px;
-  height: calc(100vh - 120px);
+  height: 100vh;
   max-height: 1100px;
   position: relative;
   overflow: hidden;
+  background-image: url('../images/water-1.jpeg');
+  background-size: cover;
+  color: #242424;
 }
 
 .mainWrapper {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  /* align-items: center; */
+  top: 80px;
   overflow: hidden;
   position: relative;
-  font-size: 5rem;
+}
+
+
+.mainWrapper h1 {
+  color: #0185A1;
+  font-size: 2rem;
+  font-weight: 100;
   animation: fadeIn linear 2s;
 }
 

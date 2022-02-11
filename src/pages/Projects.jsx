@@ -1,7 +1,9 @@
 /** @format */
 
 import React, { useState } from 'react';
+import Button from '../components/Button';
 import '../css/Projects.css';
+import { ProjectsData } from '../data/ProjectsData';
 
 function Clicked() {
   // window.open('https://www.google.com/', '_blank');
@@ -27,32 +29,25 @@ const Projects = () => {
   
   return (
     <div className='projectsSection'>
-      Scroll To Begin
       <div className='projectsWrapper'>
-        <button onClick={Clicked} type='button' className={class1} onMouseOver={() => setShowBtn1(true)}>
+        {ProjectsData.map((project, index) => (
+          <button onClick={Clicked} className='btn'>{project.title}</button>
+        ))}
+        <Button onClick={Clicked} className={class1} onMouseEnter={() => setShowBtn1(true)}>
           Games
           <p>JavaScript</p>
-        </button>
-        <button onClick={Clicked} type='button' className={class2} onMouseEnter={() => setShowBtn2(true)}>
+        </Button>
+        <button onClick={Clicked} className={class2} onMouseEnter={() => setShowBtn2(true)}>
           Animations
           <p>Canvas</p>
         </button>
-        <button onClick={Clicked} type='button' className={class3} onMouseEnter={() => setShowBtn3(true)}>
+        <Button onClick={Clicked} className={class3} onMouseEnter={() => setShowBtn3(true)}>
           Websites
           <p>React</p>
-        </button>
-        <button onClick={Clicked} type='button' className={class4} onMouseEnter={() => setShowBtn4(true)}>
+        </Button>
+        <Button onClick={Clicked} className={class4} onMouseEnter={() => setShowBtn4(true)}>
           GitHub
-          <p>TypeScript</p>
-        </button>
-        <button onClick={Clicked} type='button' className={class4} onMouseEnter={() => setShowBtn4(true)}>
-          Applications
-          <p>Python</p>
-        </button>
-        <button onClick={Clicked} type='button' className={class4} onMouseEnter={() => setShowBtn4(true)}>
-          Blog
-          <p></p>
-        </button>
+        </Button>
       </div>
     </div>
   );

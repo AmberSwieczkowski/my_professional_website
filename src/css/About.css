@@ -1,12 +1,10 @@
 /** @format */
 
 .aboutSection {
-  width: calc(100vw - 120px);
-  margin-left: 120px;
   height: calc(100vh - 120px);
   max-height: 1700px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   position: relative;
   overflow: hidden;
   background-color: white;
@@ -50,18 +48,12 @@
 .about {
   background-color: transparent;
   color: black;
-  font-size: 3rem;
+  font-size: 1.5rem;
   display: inline-block;
   font-family: sans-serif;
   padding: 10px 20px;
   margin: 40px;
   /* border: 10px double black; */
-  -webkit-mask-size: contain;
-  -webkit-mask-image: url('http://www.textures4photoshop.com/tex/thumbs/crack-grunge-texture-PNG-thumb24.png');
-  -o-mask-image: url('http://www.textures4photoshop.com/tex/thumbs/crack-grunge-texture-PNG-thumb24.png');
-  -moz-mask-image: url('http://www.textures4photoshop.com/tex/thumbs/crack-grunge-texture-PNG-thumb24.png');
-  -ms-mask-image: url('http://www.textures4photoshop.com/tex/thumbs/crack-grunge-texture-PNG-thumb24.png');
-  mask-image: url('http://www.textures4photoshop.com/tex/thumbs/crack-grunge-texture-PNG-thumb24.png');
   opacity: 10%;
 }
 

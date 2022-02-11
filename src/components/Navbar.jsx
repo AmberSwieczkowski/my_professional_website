@@ -1,20 +1,23 @@
 /** @format */
 
 import React from 'react';
-import '../css/Navbar.css'
+import { Link } from 'react-router-dom';
+import '../css/Navbar.css';
+import { NavbarData } from '../data/NavbarData';
 
-
-const Navbar = ({ toggle }) => {
+const Navbar = ({ title, link }) => {
   return (
-    <div className='nav'>
-      <div className='navLink' to='/'>
-        <div className="label">PROJECTS</div>
+    <>
+      <div className='nav'>
+        <div className='navLink' to='/'>
+          {NavbarData.map((item, index) => (
+            <Link className='label' to={item.link}>
+              {item.title}
+            </Link>
+          ))}
         </div>
-      <div className='navLink' to='/'><div className="label">ABOUT</div>
       </div>
-      <div className='navLink' to='/'><div className="label">CONTACT</div>
-      </div>
-      </div>
+    </>
   );
 };
 
