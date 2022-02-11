@@ -1,0 +1,28 @@
+/** @format */
+
+.nav {
+  display: grid;
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  max-height: 1100px;
+  color: black;
+  float: left;
+}
+
+.nav:hover {
+    /* background-color: #730e04; */
+    background-color: black;
+    color: white;
+    transition: 0.5s all ease-in;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transform: rotate(-90deg);
+  font-style: italic;
+  /* border: 2px solid black; */
+}
