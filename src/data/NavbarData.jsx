@@ -1,7 +1,7 @@
 /** @format */
 
 export const NavbarData = [
-    { title: 'About', link: '../pages/About' },
-    { title: 'Projects', link: '../pages/Projects' },
-    { title: 'Resume', link: '/resume' }
+    { id: 'nav1', title: 'About', link: '../pages/About' },
+    { id: 'nav2', title: 'Projects', link: '../pages/Projects' },
+    { id: 'nav3', title: 'Resume', link: '/resume' }
 ]

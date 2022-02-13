@@ -9,13 +9,13 @@ const Navbar = ({ title, link }) => {
   return (
     <>
       <div className='nav'>
-        <div className='navLink' to='/'>
           {NavbarData.map((item, index) => (
-            <Link className='label' to={item.link}>
+        <div className='navLink' to='/'>
+            <Link className='navLabel' to={item.link} key={item.id}>
               {item.title}
             </Link>
-          ))}
         </div>
+          ))}
       </div>
     </>
   );

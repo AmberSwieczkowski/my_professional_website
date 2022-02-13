@@ -7,8 +7,8 @@ import Navbar from './components/Navbar';
 import { NavbarData } from './data/NavbarData';
 import { ProjectsData } from './data/ProjectsData';
 import GlobalStyle from './globalStyles';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -16,7 +16,6 @@ function App() {
       <GlobalStyle />
       <Navbar {...NavbarData}/>
       <Dropdown />
-      <Projects {...ProjectsData}/>
       <Main />
     </>
   );
