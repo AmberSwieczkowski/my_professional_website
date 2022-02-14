@@ -1,14 +1,29 @@
 /** @format */
 
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Dropdown.css';
+import About from './About';
+import Projects from './Projects';
 
-const Dropdown = () => {
+function Dropdown() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
+  const hidden = isOpen ? '' : 'hide';
+
+  const display = `dropdownContainer ${hidden}`;
+
   return (
     <>
-      <div className='dropdownContainer'>Hi</div>
+      <div className={display} onClick={toggle}>
+        <Projects />
+      </div>
     </>
   );
-};
+}
 
 export default Dropdown;
