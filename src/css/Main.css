@@ -27,7 +27,7 @@
   font-size: 2rem;
   margin: 20px;
   font-weight: 100;
-  animation: fadeIn linear 4s;
+  /* animation: fadeIn linear 4s; */
 }
 
 @keyframes fadeIn {

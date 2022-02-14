@@ -1,27 +1,39 @@
+/** @format */
+
 .dropdownBackground {
-    background-image: url(../images/water-1.jpeg);
-    height: 100vh;
+  height: 100vh;
+  max-height: 1100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../images/water-1.jpeg');
+  background-size: cover;
+  color: #242424;
 }
 
 .dropdownContainer {
-    background: linear-gradient(to right bottom,#fff 0%, #014C67 25%, #0185A1 70%, #fff 100%);
-    /* background-color: white; */
-    border: 1px solid black;
-    border-radius: 60px;
-    height: 800px;
-    top: 80px;
-    width: 30vw;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    z-index: 102;
+  /* background: linear-gradient(
+    to right bottom,
+    #fff 0%,
+    #014c67 25%,
+    #0185a1 70%,
+    #fff 100%
+  ); */
+  background-color: white;
+  border: 2px solid #0185a1;
+  border-radius: 60px;
+  height: 90vh;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  margin:80px  auto;
+  z-index: 102;
 }
 
 .dropdownWrapper {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .hide {
-    display: none;
-  }
+  display: none;
+}

@@ -25,7 +25,7 @@ function App() {
       <GlobalStyle />
       <Navbar {...NavbarData} toggle={toggle}/>
       <Dropdown isOpen={isOpen} toggle={toggle}/>
-      <Main/>
+      <Main isOpen={isOpen} toggle={toggle}/>
     </>
   );
 }

@@ -4,10 +4,14 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../css/Main.css';
 import { AboutData } from '../data/AboutData';
 
-const Main = () => {
+const Main = ({isOpen, toggle}) => {
+
+  const hidden = isOpen ? '' : 'hide';
+
+  const display = `mainSection ${hidden}`
   return (
     <>
-      <div className='mainSection'>
+      <div className={display}>
         <div className='mainWrapper'>
           {AboutData.map((about, index) => (
             <div key={about.id}>
