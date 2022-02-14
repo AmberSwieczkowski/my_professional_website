@@ -10,7 +10,7 @@ const Main = () => {
       <div className='mainSection'>
         <div className='mainWrapper'>
           {AboutData.map((about, index) => (
-            <>
+            <div key={about.id}>
               <h1>
                 Hello,
                 <h1>
@@ -30,7 +30,7 @@ const Main = () => {
                   </h1>
                 </h1>
               </h1>
-            </>
+            </div>
           ))}
         </div>
       </div>

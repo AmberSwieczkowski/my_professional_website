@@ -5,23 +5,22 @@ import '../css/Dropdown.css';
 import About from './About';
 import Projects from './Projects';
 
-function Dropdown() {
-  const [isOpen, setIsOpen] = useState(false);
+function Dropdown({isOpen, toggle}) {
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-    console.log(isOpen);
-  };
+  const hidden = isOpen ? 'hide' : '';
 
-  const hidden = isOpen ? '' : 'hide';
-
-  const display = `dropdownContainer ${hidden}`;
+  const display = `dropdownBackground ${hidden}`;
 
   return (
     <>
-      <div className={display} onClick={toggle}>
+    <div className={display}>
+    <div className='dropdownContainer'>
+      <div className='dropdownWrapper'>
+        {console.log(isOpen)}
         <Projects />
       </div>
+    </div>
+    </div>
     </>
   );
 }

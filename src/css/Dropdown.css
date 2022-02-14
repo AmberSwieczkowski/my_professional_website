@@ -1,11 +1,25 @@
+.dropdownBackground {
+    background-image: url(../images/water-1.jpeg);
+    height: 100vh;
+}
+
 .dropdownContainer {
-    background: linear-gradient(to right bottom, #014C67 0%, #0185A1 100%);
-    /* border: 3px solid red; */
-    height: 90vh;
+    background: linear-gradient(to right bottom,#fff 0%, #014C67 25%, #0185A1 70%, #fff 100%);
+    /* background-color: white; */
+    border: 1px solid black;
+    border-radius: 60px;
+    height: 800px;
     top: 80px;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    z-index: 102;
+}
+
+.dropdownWrapper {
     display: grid;
     grid-template-columns: auto auto auto;
-    /* display: none; */
 }
 
 .hide {
