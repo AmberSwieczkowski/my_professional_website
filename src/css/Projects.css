@@ -2,15 +2,43 @@
 
 .projectsSection {
   background: transparent;
-  height: 80vh;
+  height: 60vh;
   width: 30vw;
-  top: 80px;
   position: relative;
   text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.menuSection {
+  /* border: 3px solid green; */
+  margin: 10px;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #006981;
+}
+
+.projectsLinks,
+.websiteLinks {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media screen and (max-width: 1024px) {
+  .menuSection h1 {
+    font-size: clamp(1rem, 1.5rem, 2rem);
+  }
+  .projectsSection {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .projectsLinks,
+  .websiteLinks {
+    grid-template-columns: auto;
+  }
+}
 
 .projectsWrapper {
   /* background-color: red; */
@@ -30,6 +58,7 @@
 .btn {
   background-color: white;
   border: 4px solid white;
+  color: #006981;
   border-radius: 2px;
   margin: 10px;
   padding: 10px;
@@ -39,4 +68,12 @@
 
 .btn p {
   font-size: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 0px;
+  }
 }
